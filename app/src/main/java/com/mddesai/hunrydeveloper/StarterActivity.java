@@ -15,51 +15,58 @@ public class StarterActivity extends AppCompatActivity {
 
         ListView starterList= findViewById(R.id.listview);
 
+
+
 //        String[] dishes=new String[20];
-        String[] dishes={
-                    "Spaghetti Carbonara",
-                    "Chicken Tikka Masala",
-                    "Vegetable Stir-fry",
-                    "Margherita Pizza",
-                    "Caesar Salad",
-                    "Beef Burger",
-                    "Sushi Platter",
-                    "Tom Yum Soup",
-                    "Grilled Salmon",
-                    "Mushroom Risotto",
-                    "Pad Thai",
-                    "BBQ Ribs",
-                    "Fish and Chips",
-                    "Chicken Alfredo",
-                    "Beef Stroganoff",
-                    "Tandoori Chicken",
-                    "Caprese Salad",
-                    "Shrimp Scampi",
-                    "Lamb Curry",
-                    "Greek Salad",
-                    "Eggplant Parmesan",
-                    "Pesto Pasta",
-                    "Steak Frites",
-                    "Chicken Shawarma",
-                    "Vegetable Lasagna",
-                    "Sashimi Assortment",
-                    "Beef Wellington",
-                    "Lobster Bisque",
-                    "Vegetarian Curry",
-                    "Chicken Caesar Wrap",
-                    "Philly Cheesesteak",
-                    "Falafel Platter",
-                    "Margherita Flatbread",
-                    "Beef Tacos",
-                    "Chicken Kebabs",
-                    "Cobb Salad",
-                    "Vegetable Tempura",
-                    "Seafood Paella",
-                    "Ratatouille",
-                    "Pulled Pork Sandwich"};
+//        String[] dishes={
+//                    "Spaghetti Carbonara",
+//                    "Chicken Tikka Masala",
+//                    "Vegetable Stir-fry",
+//                    "Margherita Pizza",
+//                    "Caesar Salad",
+//                    "Beef Burger",
+//                    "Sushi Platter",
+//                    "Tom Yum Soup",
+//                    "Grilled Salmon",
+//                    "Mushroom Risotto",
+//                    "Pad Thai",
+//                    "BBQ Ribs",
+//                    "Fish and Chips",
+//                    "Chicken Alfredo",
+//                    "Beef Stroganoff",
+//                    "Tandoori Chicken",
+//                    "Caprese Salad",
+//                    "Shrimp Scampi",
+//                    "Lamb Curry",
+//                    "Greek Salad",
+//                    "Eggplant Parmesan",
+//                    "Pesto Pasta",
+//                    "Steak Frites",
+//                    "Chicken Shawarma",
+//                    "Vegetable Lasagna",
+//                    "Sashimi Assortment",
+//                    "Beef Wellington",
+//                    "Lobster Bisque",
+//                    "Vegetarian Curry",
+//                    "Chicken Caesar Wrap",
+//                    "Philly Cheesesteak",
+//                    "Falafel Platter",
+//                    "Margherita Flatbread",
+//                    "Beef Tacos",
+//                    "Chicken Kebabs",
+//                    "Cobb Salad",
+//                    "Vegetable Tempura",
+//                    "Seafood Paella",
+//                    "Ratatouille",
+//                    "Pulled Pork Sandwich"};
 
-        ArrayAdapter<String> dishesAdapter= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,dishes);
+//        ArrayAdapter<String> dishesAdapter= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,dishes);
 
+
+        Dish dishOne=new Dish("Spaghetti Carbonara","this is Spaghetti Carbonara",4444);
+
+        Dish[] dishes1={dishOne,dishOne,dishOne,dishOne};
+        ArrayAdapter<Dish> dishesAdapter= new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,dishes1);
         starterList.setAdapter(dishesAdapter);
     }
 }
